@@ -1,0 +1,36 @@
+//This is just an explanation of the em sizes given below. You can delete lines 1-6. Change breakpoints starting on line 11 to match what you want
+// $x-small: 30em; //480 and over = 480 / 16
+// $small: 40em;  //640px and over = 640 / 16
+// $medium: 50em; //800px and over = 800 / 16
+// $large: 67.5em; //1080px and over = 1080 / 16
+// $x-large: 80em; //1280px and over = 1280 / 16
+// $xx-large: 90em; //1440px and over = 1440 / 16
+ 
+/* Change and add breakpoints here to match what you need */
+$breakpoints: (
+  'x-small'  : ( min-width:  30em ),
+  'small'  : ( min-width:  40em ),
+  'medium' : ( min-width:  50em ),
+  'large'  : ( min-width: 67.5em ),
+  'x-large' : ( min-width: 80em ),
+  'xx-large': ( min-width: 90em)
+);
+
+
+
+  
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}

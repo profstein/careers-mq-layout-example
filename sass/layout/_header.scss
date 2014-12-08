@@ -1,0 +1,25 @@
+//==============================
+//Header
+
+header, .header{  
+    @include clearfix;
+//    @include legacy-pie-clearfix;
+//    @include pie-clearfix;
+}
+
+
+.header{
+
+	margin-bottom: 1em;
+	.navigation{
+		nav{
+			width:100%;
+		}
+	}
+
+	//this is just an example of how you might change the header at a specific breakpoint
+	@include respond-to(large){
+			@include cols(3,4);
+	}//end large
+
+}// end header

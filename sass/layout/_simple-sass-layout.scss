@@ -1,0 +1,117 @@
+@mixin column($cols, $totalCols, $colGutter){
+        width: ($cols/$totalCols)*100%;
+        padding: 0 $colGutter;
+        float: left;  
+    
+//        width: (8/12)*100%;
+//        padding: 0 $gutter;
+//        float: left;   
+}
+
+//styling for the simple-sass-layout.html page
+#simple-sass-layout {
+//    .intro {
+//       width: (8/12)*100%;
+//        padding: 0 $gutter;
+//        float: left;
+//    }
+//    
+//    .date, .loc{
+//       width: (4/12)*100%;
+//        padding: 0 $gutter;
+//        float: left; 
+//    }
+    
+    .featured-speakers{
+        clear:both;
+        @include clearfix;
+    }
+    .speaker{
+        
+//        @include respond-to(medium){
+//            @include column(4, 12, $gutter);
+//        }
+//        
+//        @include respond-to(large){
+//            @include column(2, 10, $gutter);
+//        }
+    }
+    
+    .tracks{
+        clear: both;   
+        @include clearfix;
+        
+//        .track{
+//             @include column(6, 12, $gutter);   
+//        }
+    
+        
+    }
+    
+    
+}
+//end simple-sass-layout
+
+@include respond-to(small){
+    .intro{
+        @include column(8,12, $gutter);   
+    }
+    
+    .date, .loc{
+         @include column(4,12,$gutter);   
+    }
+    
+}//end small media query
+
+
+@include respond-to(medium){
+    .speaker{
+        @include column(1,3, $gutter);
+    }
+    
+    .track{
+        @include column(1,2, $gutter);
+    }
+     
+//        Two: use nth child / nth of type
+        .track:nth-of-type(2n+1){
+            clear:both;
+        }
+}//end medium media query
+
+
+@include respond-to(large){
+    .speaker{
+        @include column(1,4, $gutter);
+    }
+    
+    .track{
+     @include column(1,4, $gutter);    
+    }
+
+    .track:nth-of-type(2n+1){
+            clear:none;        
+    }
+    
+    .track:nth-of-type(4n+1){
+            clear:both;        
+    }
+    
+}//end large media query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

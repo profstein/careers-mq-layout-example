@@ -1,0 +1,677 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* 
+====================================
+Modified Normalize.css Code 
+
+This is a modified version of normalize.css
+It has been modified to remove some of the choices such as font-family, that a designer should make. Most of what is taken out is added in a separate starter stylesheet meant to be used in combination with this version of normalize.css
+====================================
+*/
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 18, ../sass/vendor/_normalize.scss */
+html {
+  /*  font-family: sans-serif;  1 */
+  /* Removed in order to allow designer to set the default fonts */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 28, ../sass/vendor/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 52, ../sass/vendor/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 64, ../sass/vendor/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 74, ../sass/vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 85, ../sass/vendor/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 96, ../sass/vendor/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 105, ../sass/vendor/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 116, ../sass/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, ../sass/vendor/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/*Commented out so that typography set by designer all at once.*/
+/*
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+*/
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 145, ../sass/vendor/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 154, ../sass/vendor/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 161, ../sass/vendor/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 165, ../sass/vendor/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 176, ../sass/vendor/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 184, ../sass/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 196, ../sass/vendor/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 206, ../sass/vendor/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 217, ../sass/vendor/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /*two font names are needed to fix the bug. If you add the same twice then it compresses better on gzip */
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 241, ../sass/vendor/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 251, ../sass/vendor/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 263, ../sass/vendor/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 278, ../sass/vendor/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 288, ../sass/vendor/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 297, ../sass/vendor/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 307, ../sass/vendor/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 320, ../sass/vendor/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 332, ../sass/vendor/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 342, ../sass/vendor/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 356, ../sass/vendor/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 364, ../sass/vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 375, ../sass/vendor/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 384, ../sass/vendor/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 393, ../sass/vendor/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 404, ../sass/vendor/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 410, ../sass/vendor/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* Lists
+   ========================================================================== */
+/* 
+Some browsers use margin-left and some padding-left to indent the list. Pick which one you like (or both) and change them here
+*/
+/* line 421, ../sass/vendor/_normalize.scss */
+ul, ol {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+/* Set the space between items in a list, usually done with margin-bottom */
+/* line 427, ../sass/vendor/_normalize.scss */
+li {
+  margin-bottom: 0;
+}
+
+/*Setting the overall list margin or padding will also effect your nav so make sure you set that specifically.
+You can add other nav styling here if you like such as removing the bullets with list-style none.
+only ul is give here because ol is generally not used with nav
+*/
+/* line 435, ../sass/vendor/_normalize.scss */
+nav ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 441, ../sass/vendor/_normalize.scss */
+nav ul li {
+  margin-bottom: 0;
+  /* adding a margin-bottom setting to li elements can help make them readable */
+}
+
+/*
+definition lists may be given a top and bottom margin by default (dl element)
+and the definition itself (dd element) is usually indented by default with margin-left or padding-left;
+*/
+/* line 451, ../sass/vendor/_normalize.scss */
+dl {
+  margin: 0 0 0 0;
+}
+
+/* line 455, ../sass/vendor/_normalize.scss */
+dd {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+/*blockquotes are set off by default using margins or padding.*/
+/* line 462, ../sass/vendor/_normalize.scss */
+blockquote {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+/* this removes any quotes a browser might add to blockquote */
+/* line 467, ../sass/vendor/_normalize.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 472, ../sass/vendor/_normalize.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/*figure are set off by default using margins or padding.*/
+/* line 479, ../sass/vendor/_normalize.scss */
+figure {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 489, ../sass/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* links and visited links have default colors and underline */
+/* line 494, ../sass/vendor/_normalize.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: inherit;
+  text-decoration: none;
+  /*this controls if the underline is showing */
+  /* some people choose to use a bottom border in place of an underline because it doesn't cut through the descenders in letters like gyjp */
+  /* border-bottom: 1px solid #000; */
+}
+
+/* line 506, ../sass/vendor/_normalize.scss */
+a:hover {
+  color: inherit;
+  /* if you set bottom-border on a{} above then remember to change the color here */
+  /* border-bottom: 1px solid #000; */
+}
+
+/* it can help with usability if you give visited links a diffefrent color than unvisited ones (even if just a different shade)*/
+/* line 513, ../sass/vendor/_normalize.scss */
+a:visited {
+  color: inherit;
+  /* Again, if you set bottom-border on a{} then remember to change the color here too*/
+  /* border-bottom: 1px solid #000; */
+}
+
+/* change border colour to suit your needs */
+/* line 521, ../sass/vendor/_normalize.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 0 0;
+  padding: 0;
+}
+
+/* Lesser Used Elements
+   ========================================================================== */
+/* change colours to suit your needs */
+/* line 535, ../sass/vendor/_normalize.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 542, ../sass/vendor/_normalize.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 549, ../sass/vendor/_normalize.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 553, ../sass/vendor/_normalize.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 8, ../sass/base/_typography.scss */
+html {
+  font-size: 1em;
+}
+
+/* line 10, ../sass/base/_typography.scss */
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+/* line 18, ../sass/base/_typography.scss */
+p {
+  margin-bottom: 1.3em;
+}
+
+/* line 20, ../sass/base/_typography.scss */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+/* line 27, ../sass/base/_typography.scss */
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+/* line 32, ../sass/base/_typography.scss */
+h2 {
+  font-size: 2.827em;
+}
+
+/* line 34, ../sass/base/_typography.scss */
+h3 {
+  font-size: 1.999em;
+}
+
+/* line 36, ../sass/base/_typography.scss */
+h4 {
+  font-size: 1.414em;
+}
+
+/* line 38, ../sass/base/_typography.scss */
+small, .font_small {
+  font-size: 0.707em;
+}
+
+/* line 6, ../sass/layout/_responsive-base.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/layout/_responsive-base.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 15, ../sass/layout/_responsive-base.scss */
+img, video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 4, ../sass/layout/_header.scss */
+header, .header {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 11, ../sass/layout/_header.scss */
+.header {
+  margin-bottom: 1em;
+}
+/* line 15, ../sass/layout/_header.scss */
+.header .navigation nav {
+  width: 100%;
+}
+@media only screen and (min-width: 67.5em) {
+  /* line 11, ../sass/layout/_header.scss */
+  .header {
+    width: 75%;
+    padding: 0 10px;
+    float: left;
+  }
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  overflow: hidden;
+  *zoom: 1;
+}

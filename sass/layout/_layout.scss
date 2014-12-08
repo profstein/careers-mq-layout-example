@@ -1,0 +1,22 @@
+@import "compass/utilities/general/clearfix";
+
+@import "layout-mixins";
+@import "responsive-base";
+
+//Sitewide sections
+@import "header";
+@import "footer";
+@import "navigation";
+
+//each page
+@import "home";
+@import "about";
+
+//this examply only has two pages but you would have these too
+// @import "speakers";
+// @import "sessions";
+// @import "schedule";
+// @import "video";
+// @import "createdby";
+    
+     
