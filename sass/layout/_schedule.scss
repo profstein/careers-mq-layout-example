@@ -1,0 +1,148 @@
+#schedule{
+
+
+  //  ==========================================
+  //  MIDTERM CSS
+  //  ==========================================
+
+    //paste midterm here
+
+  .schedule.content{
+     section{
+      padding:.5em;
+       margin-bottom:1.5em;
+    }
+    //adjust size from default
+    h1{
+      font-size: 1.5em;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    .time{
+      font-weight: 900;
+      margin: 0 0 1em 0;
+    }
+    
+
+    .opening, .lunch, .closing{ background-color: #ddd; color:#333; & h1{color:#333;} }
+    
+    //general workshop styles
+    .workshop{ 
+      padding: $gutter/2;
+      margin-bottom: 1em;
+      
+      h2{
+        margin:0; 
+        line-height:1.2;
+        font-size: 1.1em;
+        // font-variant: small-caps;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      h3{
+        margin:0; 
+        line-height:1.2;
+        font-size: 1.4em;
+      }
+
+      .room{
+        text-align:right;
+      }
+    }//end .workshop
+
+
+    //Style alternating sessions differently
+    $dark: #333;
+    $light: #eee; //$light: lightblue;
+
+    .session.one, .session.three{ 
+      
+      background-color: $dark; 
+      color:$light; 
+
+      .workshop{ 
+        background-color: $light; 
+        color:$dark;
+        h2{
+          color:lighten($dark, 15%);
+        }
+      }
+    }//end session.one .session.three
+
+
+    .session.two, .session.four{ 
+      
+      background-color: $light; 
+      color:$dark; 
+
+      .workshop{ 
+        background-color: $dark; 
+        color:$light;
+        h2{
+          color:darken($light, 15%);
+        }
+      }
+    }//end .session.two .session.four
+    
+  }//end .schedule
+
+  //  ==========================================
+  //  SMALL LAYOUT
+  //  ==========================================
+  @include respond-to(small){
+    .session{
+      clear: both;
+    }
+    
+
+  }
+  //end small
+
+
+
+  //  ==========================================
+  //  MEDIUM LAYOUT
+  //  ==========================================
+  @include respond-to(medium){
+    
+    .session{
+      @include cols(1,2);
+      clear: none;
+    }
+    
+    .opening, .lunch, .closing{ 
+      clear: both;
+    }
+
+  }
+  //end small
+
+
+
+
+  //  ==========================================
+  //  LARGE LAYOUT
+  //  ==========================================
+  @include respond-to(large){
+
+    .session{
+      @include no-cols();
+      margin-bottom:1.5em;
+      clear:both;
+      @include clearfix;
+    }
+
+    .workshop{
+      @include cols(1,4);
+      border-right:1px solid black;
+    }
+
+  }
+  //end small
+
+
+}
+//end #schedule
+

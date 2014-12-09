@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* 
 ====================================
 Modified Normalize.css Code 
@@ -653,25 +651,140 @@ header, .header {
   *zoom: 1;
 }
 
-/* line 11, ../sass/layout/_header.scss */
+/* line 16, ../sass/layout/_header.scss */
 .header {
   margin-bottom: 1em;
 }
-/* line 15, ../sass/layout/_header.scss */
-.header .navigation nav {
-  width: 100%;
+
+/* line 22, ../sass/layout/_header.scss */
+.pageHeader, .pageFooter {
+  background-color: #333;
+  color: #eee;
+  padding: 1em .5em;
 }
-@media only screen and (min-width: 67.5em) {
-  /* line 11, ../sass/layout/_header.scss */
-  .header {
-    width: 75%;
-    padding: 0 10px;
-    float: left;
-  }
+
+/* line 29, ../sass/layout/_header.scss */
+.pageHeader h1 {
+  color: #eee;
 }
 
 /* line 1, ../sass/layout/_footer.scss */
 footer {
   overflow: hidden;
   *zoom: 1;
+}
+
+/* line 11, ../sass/layout/_schedule.scss */
+#schedule .schedule.content section {
+  padding: .5em;
+  margin-bottom: 1.5em;
+}
+/* line 16, ../sass/layout/_schedule.scss */
+#schedule .schedule.content h1 {
+  font-size: 1.5em;
+  font-weight: 900;
+  margin: 0;
+}
+/* line 22, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .time {
+  font-weight: 900;
+  margin: 0 0 1em 0;
+}
+/* line 28, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .opening, #schedule .schedule.content .lunch, #schedule .schedule.content .closing {
+  background-color: #ddd;
+  color: #333;
+}
+/* line 28, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .opening h1, #schedule .schedule.content .lunch h1, #schedule .schedule.content .closing h1 {
+  color: #333;
+}
+/* line 31, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .workshop {
+  padding: 7.5px;
+  margin-bottom: 1em;
+}
+/* line 35, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .workshop h2 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 44, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .workshop h3 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 1.4em;
+}
+/* line 50, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .workshop .room {
+  text-align: right;
+}
+/* line 60, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .session.one, #schedule .schedule.content .session.three {
+  background-color: #333333;
+  color: #eeeeee;
+}
+/* line 65, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .session.one .workshop, #schedule .schedule.content .session.three .workshop {
+  background-color: #eeeeee;
+  color: #333333;
+}
+/* line 68, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .session.one .workshop h2, #schedule .schedule.content .session.three .workshop h2 {
+  color: #595959;
+}
+/* line 75, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .session.two, #schedule .schedule.content .session.four {
+  background-color: #eeeeee;
+  color: #333333;
+}
+/* line 80, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .session.two .workshop, #schedule .schedule.content .session.four .workshop {
+  background-color: #333333;
+  color: #eeeeee;
+}
+/* line 83, ../sass/layout/_schedule.scss */
+#schedule .schedule.content .session.two .workshop h2, #schedule .schedule.content .session.four .workshop h2 {
+  color: #c8c8c8;
+}
+@media only screen and (min-width: 40em) {
+  /* line 95, ../sass/layout/_schedule.scss */
+  #schedule .session {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 50em) {
+  /* line 110, ../sass/layout/_schedule.scss */
+  #schedule .session {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+    clear: none;
+  }
+  /* line 115, ../sass/layout/_schedule.scss */
+  #schedule .opening, #schedule .lunch, #schedule .closing {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  /* line 130, ../sass/layout/_schedule.scss */
+  #schedule .session {
+    width: 100%;
+    padding: 0;
+    float: none;
+    margin-bottom: 1.5em;
+    clear: both;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 137, ../sass/layout/_schedule.scss */
+  #schedule .workshop {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+    border-right: 1px solid black;
+  }
 }

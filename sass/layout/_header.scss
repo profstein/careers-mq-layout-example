@@ -5,21 +5,29 @@ header, .header{
     @include clearfix;
 //    @include legacy-pie-clearfix;
 //    @include pie-clearfix;
+	h1{
+		// &:first-word{
+		// 	color:red;
+		// }
+	}
 }
 
 
 .header{
 
 	margin-bottom: 1em;
-	.navigation{
-		nav{
-			width:100%;
-		}
-	}
-
-	//this is just an example of how you might change the header at a specific breakpoint
-	@include respond-to(large){
-			@include cols(3,4);
-	}//end large
-
 }// end header
+	
+	//basic styling for header and footer which are not the focus of this pen
+.pageHeader,.pageFooter{
+  background-color: #333;
+  color: #eee;
+  padding:1em .5em;
+  
+}
+
+.pageHeader h1{color:#eee;}//modify color from blueprint typography
+
+
+
+
