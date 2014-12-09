@@ -1,3 +1,10 @@
+// ================================================
+// Media Query Mixin
+// ================================================
+//  This mixin is a replacement for  the Media Query Mixin found in _layout-mixins.scss
+//  in order to use it you must be able to parse Sass 3.3 and above beacuse it uses Sass Maps
+
+
 //This is just an explanation of the em sizes given below. You can delete lines 1-6. Change breakpoints starting on line 11 to match what you want
 // $x-small: 30em; //480 and over = 480 / 16
 // $small: 40em;  //640px and over = 640 / 16
