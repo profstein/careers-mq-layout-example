@@ -6,7 +6,86 @@
 	//	==========================================
 
 		//paste midterm here
+	.content{
 
+		.about, .date-time, .loc, .info{
+			padding: 0 $gutter/2;
+		}
+
+		p{
+			margin-top:0;
+		}
+
+		.date-time{
+			background-color: $dark;
+			color: $light;
+			padding: $gutter/2;
+			h3{
+				font-size: 1.4em;
+				margin: 0;
+			}
+		}
+
+		.loc{
+			h3{
+				font-size: 1.4em;
+				margin: 0;
+			}
+		}
+
+
+		.directions{
+
+			.route{
+				padding: $gutter/2;
+
+				h3{
+					margin-bottom: 0;
+				}
+
+				h4{
+					font-weight: bold;
+				}
+
+				p{
+					margin-left: $gutter;
+				}
+			}
+			.subway, .path{
+				background-color: $dark;
+				color: $light;
+			}
+
+			.info{
+				font-style: italic;
+				text-align: center;
+			}
+		}
+		//end directions
+	}
+
+	/* 
+	  =====================================
+	  CSS for <iframe> embedded Google Map
+	  ===================================== 
+	*/
+	.mapWrapper {
+	    position: relative;
+	    /* 
+	    Do math with the height of your iframe divided by the width, then converted to percent
+	    In this example the height is 400 and the width is 600
+	    400 / 600 = .66666667 
+	    which is 66.6666667% */
+	    padding-bottom: 66.6666667%; 
+	    height: 0;
+	}
+	.mapWrapper iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
 
 
 	// 	==========================================
@@ -25,7 +104,50 @@
 	//	MEDIUM LAYOUT
 	//	==========================================
 	@include respond-to(medium){
+		.content{
+			.about{
+				@include cols(3,4);
+			}
 
+			.date-time{
+				@include cols(1,4);
+				background-color: #fff;
+				color: #333;
+			}
+
+			.loc{
+				@include cols(1,4);
+			}
+
+			.info{
+				@include cols(3,4);
+			}
+
+			.mapWrapper{
+				clear: both;
+				padding-bottom: 50%;
+			}
+
+			.directions{
+
+				.route{
+					@include cols(1,2);
+					&:nth-of-type(2n+1){
+						clear:both;
+					}
+
+					// border-bottom: 1px solid $dark;
+					
+
+				}
+
+				.subway, .path{
+					background-color: #fff;
+					color: #333;
+					// border-bottom: 1px solid $light;
+				}
+			}
+		}
 		
 
 	}
@@ -38,7 +160,31 @@
 	//	LARGE LAYOUT
 	//	==========================================
 	@include respond-to(large){
+		.content{
+			.about{
+				@include cols(1,2);
+				font-size:1.25em;
+			}
 
+			.date-time, .loc, .info{
+				@include cols(1,2);
+			}
+
+			.map{
+				@include cols(1,2);
+			}
+
+			.directions{
+				.route{
+					@include cols(1,4);
+					//remove clearing to allow four across
+					&:nth-of-type(2n+1){
+						clear:none;
+					}
+				}
+			}
+
+		}
 		
 
 	}

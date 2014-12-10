@@ -670,11 +670,22 @@ header, .header {
 
 /* line 1, ../sass/layout/_footer.scss */
 footer {
-  overflow: hidden;
+  clear: both;
   *zoom: 1;
 }
+/* line 38, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 12, ../sass/layout/_home.scss */
+/* line 1, ../sass/layout/_navigation.scss */
+nav {
+  clear: both;
+}
+
+/* line 11, ../sass/layout/_home.scss */
 #home .featuredInfo {
   background-color: #333333;
   color: #eeeeee;
@@ -682,67 +693,67 @@ footer {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 18, ../sass/layout/_home.scss */
+/* line 17, ../sass/layout/_home.scss */
 #home .featuredInfo .introduction {
   font-size: 1.3em;
 }
-/* line 23, ../sass/layout/_home.scss */
+/* line 22, ../sass/layout/_home.scss */
 #home .featuredInfo .date-location .date {
   width: 33.33333%;
   padding: 0 15px;
   float: left;
 }
-/* line 27, ../sass/layout/_home.scss */
+/* line 26, ../sass/layout/_home.scss */
 #home .featuredInfo .date-location .location {
   width: 66.66667%;
   padding: 0 15px;
   float: left;
 }
-/* line 34, ../sass/layout/_home.scss */
+/* line 33, ../sass/layout/_home.scss */
 #home .featuredSpeakers {
   width: 98%;
   margin: 0 auto;
   text-align: center;
 }
-/* line 40, ../sass/layout/_home.scss */
+/* line 39, ../sass/layout/_home.scss */
 #home .featuredSpeakers .speaker {
   margin-bottom: 2em;
 }
-/* line 42, ../sass/layout/_home.scss */
+/* line 41, ../sass/layout/_home.scss */
 #home .featuredSpeakers .speaker h3 {
   margin-top: 0;
 }
-/* line 48, ../sass/layout/_home.scss */
+/* line 47, ../sass/layout/_home.scss */
 #home .tracks {
   border-bottom: 3px solid #333333;
 }
-/* line 51, ../sass/layout/_home.scss */
+/* line 50, ../sass/layout/_home.scss */
 #home .tracks h2 {
   margin-bottom: 0;
 }
-/* line 54, ../sass/layout/_home.scss */
+/* line 53, ../sass/layout/_home.scss */
 #home .tracks .track {
   padding: 7.5px;
 }
-/* line 59, ../sass/layout/_home.scss */
+/* line 58, ../sass/layout/_home.scss */
 #home .tracks .track:nth-of-type(2n+1) {
   background-color: #333333;
   color: #eeeeee;
 }
 @media only screen and (min-width: 30em) {
-  /* line 74, ../sass/layout/_home.scss */
+  /* line 73, ../sass/layout/_home.scss */
   #home .featuredInfo .date-location .date {
     width: 50%;
     padding: 0 15px;
     float: left;
   }
-  /* line 78, ../sass/layout/_home.scss */
+  /* line 77, ../sass/layout/_home.scss */
   #home .featuredInfo .date-location .location {
     width: 50%;
     padding: 0 15px;
     float: left;
   }
-  /* line 87, ../sass/layout/_home.scss */
+  /* line 86, ../sass/layout/_home.scss */
   #home .featuredSpeakers .speaker {
     width: 50%;
     padding: 0 15px;
@@ -750,13 +761,13 @@ footer {
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 103, ../sass/layout/_home.scss */
+  /* line 102, ../sass/layout/_home.scss */
   #home .tracks .track {
     overflow: hidden;
     *zoom: 1;
     clear: both;
   }
-  /* line 107, ../sass/layout/_home.scss */
+  /* line 106, ../sass/layout/_home.scss */
   #home .tracks .track h3 {
     width: 33.33333%;
     padding: 0 15px;
@@ -764,7 +775,7 @@ footer {
     text-transform: uppercase;
     font-size: 1.3em;
   }
-  /* line 113, ../sass/layout/_home.scss */
+  /* line 112, ../sass/layout/_home.scss */
   #home .tracks .track p {
     width: 66.66667%;
     padding: 0 15px;
@@ -772,25 +783,25 @@ footer {
   }
 }
 @media only screen and (min-width: 50em) {
-  /* line 129, ../sass/layout/_home.scss */
+  /* line 128, ../sass/layout/_home.scss */
   #home .featuredInfo .introduction {
     width: 66.66667%;
     padding: 0 15px;
     float: left;
   }
-  /* line 133, ../sass/layout/_home.scss */
+  /* line 132, ../sass/layout/_home.scss */
   #home .featuredInfo .date-location {
     width: 33.33333%;
     padding: 0 15px;
     float: left;
   }
-  /* line 135, ../sass/layout/_home.scss */
+  /* line 134, ../sass/layout/_home.scss */
   #home .featuredInfo .date-location .date {
     width: 100%;
     padding: 0;
     float: none;
   }
-  /* line 139, ../sass/layout/_home.scss */
+  /* line 138, ../sass/layout/_home.scss */
   #home .featuredInfo .date-location .location {
     width: 100%;
     padding: 0;
@@ -798,36 +809,299 @@ footer {
   }
 }
 @media only screen and (min-width: 67.5em) {
-  /* line 160, ../sass/layout/_home.scss */
+  /* line 159, ../sass/layout/_home.scss */
   #home .featuredSpeakers .speaker {
     width: 25%;
     padding: 0 15px;
     float: left;
   }
-  /* line 170, ../sass/layout/_home.scss */
+  /* line 169, ../sass/layout/_home.scss */
   #home .tracks {
     clear: both;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 173, ../sass/layout/_home.scss */
+  /* line 172, ../sass/layout/_home.scss */
   #home .tracks .track {
     clear: none;
     width: 50%;
     padding: 0 15px;
     float: left;
   }
-  /* line 178, ../sass/layout/_home.scss */
+  /* line 177, ../sass/layout/_home.scss */
   #home .tracks .track h3 {
     width: 100%;
     padding: 0;
     float: none;
   }
-  /* line 182, ../sass/layout/_home.scss */
+  /* line 181, ../sass/layout/_home.scss */
   #home .tracks .track p {
     width: 100%;
     padding: 0;
     float: none;
+  }
+}
+
+/* line 1, ../sass/layout/_about.scss */
+#about {
+  /* 
+    =====================================
+    CSS for <iframe> embedded Google Map
+    ===================================== 
+  */
+}
+/* line 11, ../sass/layout/_about.scss */
+#about .content .about, #about .content .date-time, #about .content .loc, #about .content .info {
+  padding: 0 7.5px;
+}
+/* line 15, ../sass/layout/_about.scss */
+#about .content p {
+  margin-top: 0;
+}
+/* line 19, ../sass/layout/_about.scss */
+#about .content .date-time {
+  background-color: #333333;
+  color: #eeeeee;
+  padding: 7.5px;
+}
+/* line 23, ../sass/layout/_about.scss */
+#about .content .date-time h3 {
+  font-size: 1.4em;
+  margin: 0;
+}
+/* line 30, ../sass/layout/_about.scss */
+#about .content .loc h3 {
+  font-size: 1.4em;
+  margin: 0;
+}
+/* line 39, ../sass/layout/_about.scss */
+#about .content .directions .route {
+  padding: 7.5px;
+}
+/* line 42, ../sass/layout/_about.scss */
+#about .content .directions .route h3 {
+  margin-bottom: 0;
+}
+/* line 46, ../sass/layout/_about.scss */
+#about .content .directions .route h4 {
+  font-weight: bold;
+}
+/* line 50, ../sass/layout/_about.scss */
+#about .content .directions .route p {
+  margin-left: 15px;
+}
+/* line 54, ../sass/layout/_about.scss */
+#about .content .directions .subway, #about .content .directions .path {
+  background-color: #333333;
+  color: #eeeeee;
+}
+/* line 59, ../sass/layout/_about.scss */
+#about .content .directions .info {
+  font-style: italic;
+  text-align: center;
+}
+/* line 72, ../sass/layout/_about.scss */
+#about .mapWrapper {
+  position: relative;
+  /* 
+  Do math with the height of your iframe divided by the width, then converted to percent
+  In this example the height is 400 and the width is 600
+  400 / 600 = .66666667 
+  which is 66.6666667% */
+  padding-bottom: 66.6666667%;
+  height: 0;
+}
+/* line 82, ../sass/layout/_about.scss */
+#about .mapWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 50em) {
+  /* line 108, ../sass/layout/_about.scss */
+  #about .content .about {
+    width: 75%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 112, ../sass/layout/_about.scss */
+  #about .content .date-time {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+    background-color: #fff;
+    color: #333;
+  }
+  /* line 118, ../sass/layout/_about.scss */
+  #about .content .loc {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 122, ../sass/layout/_about.scss */
+  #about .content .info {
+    width: 75%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 126, ../sass/layout/_about.scss */
+  #about .content .mapWrapper {
+    clear: both;
+    padding-bottom: 50%;
+  }
+  /* line 133, ../sass/layout/_about.scss */
+  #about .content .directions .route {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 135, ../sass/layout/_about.scss */
+  #about .content .directions .route:nth-of-type(2n+1) {
+    clear: both;
+  }
+  /* line 144, ../sass/layout/_about.scss */
+  #about .content .directions .subway, #about .content .directions .path {
+    background-color: #fff;
+    color: #333;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  /* line 164, ../sass/layout/_about.scss */
+  #about .content .about {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+    font-size: 1.25em;
+  }
+  /* line 169, ../sass/layout/_about.scss */
+  #about .content .date-time, #about .content .loc, #about .content .info {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 173, ../sass/layout/_about.scss */
+  #about .content .map {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 178, ../sass/layout/_about.scss */
+  #about .content .directions .route {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 181, ../sass/layout/_about.scss */
+  #about .content .directions .route:nth-of-type(2n+1) {
+    clear: none;
+  }
+}
+
+/*---------------------- session page --------------------------*/
+/* line 12, ../sass/layout/_sessions.scss */
+#session .workshop_creative_writing, #session .workshop_fine_arts, #session .workshop_performing_arts, #session .workshop_media_arts {
+  width: 100%;
+  float: left;
+  margin-bottom: 4%;
+}
+/* line 17, ../sass/layout/_sessions.scss */
+#session .workshop_creative_writing h3, #session .workshop_fine_arts h3, #session .workshop_performing_arts h3, #session .workshop_media_arts h3 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: orangered;
+  margin-top: 2%;
+  background: orangered;
+  color: #fff;
+}
+/* line 27, ../sass/layout/_sessions.scss */
+#session .workshop_creative_writing h4, #session .workshop_fine_arts h4, #session .workshop_performing_arts h4, #session .workshop_media_arts h4 {
+  width: 100%;
+  float: left;
+  margin: 2% 0;
+}
+/* line 33, ../sass/layout/_sessions.scss */
+#session .track1 {
+  width: 100%;
+  float: left;
+  background-color: #d4b278;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+/* line 42, ../sass/layout/_sessions.scss */
+#session .track2 {
+  width: 100%;
+  float: left;
+  background-color: #d5ae69;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+/* line 52, ../sass/layout/_sessions.scss */
+#session .track3 {
+  width: 100%;
+  float: left;
+  background-color: #d4a85c;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+/* line 61, ../sass/layout/_sessions.scss */
+#session .track4 {
+  width: 100%;
+  float: left;
+  background-color: #d19d42;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+/* line 70, ../sass/layout/_sessions.scss */
+#session .presenter {
+  text-decoration: underline;
+  font-size: 85%;
+  font-style: italic;
+  font-weight: bold;
+}
+@media only screen and (min-width: 50em) {
+  /* line 95, ../sass/layout/_sessions.scss */
+  #session .track1, #session .track2, #session .track3, #session .track4 {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+    background-color: transparent;
+  }
+  /* line 99, ../sass/layout/_sessions.scss */
+  #session .track1 h4, #session .track2 h4, #session .track3 h4, #session .track4 h4 {
+    color: skyblue;
+  }
+  /* line 103, ../sass/layout/_sessions.scss */
+  #session .track3 {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  /* line 122, ../sass/layout/_sessions.scss */
+  #session .workshop_creative_writing, #session .workshop_fine_arts, #session .workshop_performing_arts, #session .workshop_media_arts {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 126, ../sass/layout/_sessions.scss */
+  #session .track1, #session .track2, #session .track3, #session .track4 {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+}
+@media only screen and (min-width: 80em) {
+  /* line 139, ../sass/layout/_sessions.scss */
+  #session .track1, #session .track2, #session .track3, #session .track4 {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
   }
 }
 
@@ -879,55 +1153,55 @@ footer {
 #schedule .schedule.content .workshop .room {
   text-align: right;
 }
-/* line 60, ../sass/layout/_schedule.scss */
+/* line 59, ../sass/layout/_schedule.scss */
 #schedule .schedule.content .session.one, #schedule .schedule.content .session.three {
   background-color: #333333;
   color: #eeeeee;
 }
-/* line 65, ../sass/layout/_schedule.scss */
+/* line 64, ../sass/layout/_schedule.scss */
 #schedule .schedule.content .session.one .workshop, #schedule .schedule.content .session.three .workshop {
   background-color: #eeeeee;
   color: #333333;
 }
-/* line 68, ../sass/layout/_schedule.scss */
+/* line 67, ../sass/layout/_schedule.scss */
 #schedule .schedule.content .session.one .workshop h2, #schedule .schedule.content .session.three .workshop h2 {
   color: #595959;
 }
-/* line 75, ../sass/layout/_schedule.scss */
+/* line 74, ../sass/layout/_schedule.scss */
 #schedule .schedule.content .session.two, #schedule .schedule.content .session.four {
   background-color: #eeeeee;
   color: #333333;
 }
-/* line 80, ../sass/layout/_schedule.scss */
+/* line 79, ../sass/layout/_schedule.scss */
 #schedule .schedule.content .session.two .workshop, #schedule .schedule.content .session.four .workshop {
   background-color: #333333;
   color: #eeeeee;
 }
-/* line 83, ../sass/layout/_schedule.scss */
+/* line 82, ../sass/layout/_schedule.scss */
 #schedule .schedule.content .session.two .workshop h2, #schedule .schedule.content .session.four .workshop h2 {
   color: #c8c8c8;
 }
 @media only screen and (min-width: 40em) {
-  /* line 95, ../sass/layout/_schedule.scss */
+  /* line 94, ../sass/layout/_schedule.scss */
   #schedule .session {
     clear: both;
   }
 }
 @media only screen and (min-width: 50em) {
-  /* line 110, ../sass/layout/_schedule.scss */
+  /* line 109, ../sass/layout/_schedule.scss */
   #schedule .session {
     width: 50%;
     padding: 0 15px;
     float: left;
     clear: none;
   }
-  /* line 115, ../sass/layout/_schedule.scss */
+  /* line 114, ../sass/layout/_schedule.scss */
   #schedule .opening, #schedule .lunch, #schedule .closing {
     clear: both;
   }
 }
 @media only screen and (min-width: 67.5em) {
-  /* line 130, ../sass/layout/_schedule.scss */
+  /* line 129, ../sass/layout/_schedule.scss */
   #schedule .session {
     width: 100%;
     padding: 0;
@@ -937,7 +1211,7 @@ footer {
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 137, ../sass/layout/_schedule.scss */
+  /* line 136, ../sass/layout/_schedule.scss */
   #schedule .workshop {
     width: 25%;
     padding: 0 15px;

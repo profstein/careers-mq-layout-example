@@ -1,5 +1,4 @@
 footer{  
-    @include clearfix;
-//    @include legacy-pie-clearfix;
-//    @include pie-clearfix;
+	clear: both;
+   @include pie-clearfix;
 }
