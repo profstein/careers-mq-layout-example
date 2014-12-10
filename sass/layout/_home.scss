@@ -4,32 +4,148 @@
 	// 	==========================================
 	//	MIDTERM CSS
 	//	==========================================
-
+	$dark: #333;
+    $light: #eee; 
 		//paste midterm here
 
 
+	.featuredInfo{
+		background-color: $dark;
+		color:$light;
+		padding: $gutter/2;
+		@include clearfix;
+
+		.introduction{
+			font-size: 1.3em;
+		}
+
+		.date-location{
+			.date{
+				@include cols(1,3);
+			}
+
+			.location{
+				@include cols(2,3);
+			}
+		}
+	}
+	//end featuredInfo
+
+	.featuredSpeakers{
+		//this centers the featured speakers
+		width:98%;
+		margin:0 auto;
+		text-align: center;
+
+		.speaker{
+			margin-bottom: 2em;
+			h3{
+				margin-top: 0;
+			}
+		}
+	}
+
+	.tracks{
+		border-bottom:3px solid $dark;
+
+		h2{
+			margin-bottom: 0;
+		}
+		.track{
+			padding: $gutter/2;
+
+		}
+		//fancy way to alternate the styling
+		.track:nth-of-type(2n+1){
+			background-color: $dark;
+			color:$light;
+		}
+	}
+
+
+	// 	==========================================
+	//	SMALL LAYOUT
+	//	==========================================
+	@include respond-to(x-small){
+
+		.featuredInfo{
+
+			.date-location{
+				.date{
+					@include cols(1,2);
+				}
+
+				.location{
+					@include cols(1,2);
+				}
+			}
+		}
+		//end featuredInfo
+
+		.featuredSpeakers{
+
+			.speaker{
+				@include cols(1,2);
+
+			}
+		}
+
+	}
+	//end x-small
 
 	// 	==========================================
 	//	SMALL LAYOUT
 	//	==========================================
 	@include respond-to(small){
 
-		
+		//moving the title next to the text in the tracks. If you had more than one paragraph for the description then you should wrap them in a div.
+		.tracks{
+			.track{
+				@include clearfix;
+				clear: both; //because we are floating the content we need to clear the track and do clearfix
+
+				h3{
+					@include cols(1,3);
+					text-transform: uppercase;
+					font-size: 1.3em;
+				}
+
+				p{
+					@include cols(2,3);
+				}
+			}
+		}
 
 	}
 	//end small
-
-
 
 	// 	==========================================
 	//	MEDIUM LAYOUT
 	//	==========================================
 	@include respond-to(medium){
+		//change the intro stuff to move date/time next to the text
+		.featuredInfo{
+			
+			.introduction{
+				@include cols(4,6);
+			}
 
+			.date-location{
+				@include cols(2,6);
+				.date{
+					@include no-cols;
+				}
+
+				.location{
+					@include no-cols;
+				}
+			}
+		}
+		//end featuredInfo
 		
 
 	}
-	//end small
+	//end medium
 
 
 
@@ -39,10 +155,38 @@
 	//	==========================================
 	@include respond-to(large){
 
-		
+		//make featured speakers four across
+		.featuredSpeakers{
+			.speaker{
+				@include cols(1,4);
+			}
+		}
+		//end featuredSpeakers
+
+
+
+		//change the tracks to be in two cols
+		//need to move the title and text back to normal
+		.tracks{
+			clear: both;
+			@include clearfix;
+			.track{
+				clear: none; 
+
+				@include cols(1,2);
+
+				h3{
+					@include no-cols;
+				}
+
+				p{
+					@include no-cols;
+				}
+			}
+		}
 
 	}
-	//end small
+	//end large
 
 
 }

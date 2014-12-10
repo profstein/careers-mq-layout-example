@@ -674,6 +674,163 @@ footer {
   *zoom: 1;
 }
 
+/* line 12, ../sass/layout/_home.scss */
+#home .featuredInfo {
+  background-color: #333333;
+  color: #eeeeee;
+  padding: 7.5px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 18, ../sass/layout/_home.scss */
+#home .featuredInfo .introduction {
+  font-size: 1.3em;
+}
+/* line 23, ../sass/layout/_home.scss */
+#home .featuredInfo .date-location .date {
+  width: 33.33333%;
+  padding: 0 15px;
+  float: left;
+}
+/* line 27, ../sass/layout/_home.scss */
+#home .featuredInfo .date-location .location {
+  width: 66.66667%;
+  padding: 0 15px;
+  float: left;
+}
+/* line 34, ../sass/layout/_home.scss */
+#home .featuredSpeakers {
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 40, ../sass/layout/_home.scss */
+#home .featuredSpeakers .speaker {
+  margin-bottom: 2em;
+}
+/* line 42, ../sass/layout/_home.scss */
+#home .featuredSpeakers .speaker h3 {
+  margin-top: 0;
+}
+/* line 48, ../sass/layout/_home.scss */
+#home .tracks {
+  border-bottom: 3px solid #333333;
+}
+/* line 51, ../sass/layout/_home.scss */
+#home .tracks h2 {
+  margin-bottom: 0;
+}
+/* line 54, ../sass/layout/_home.scss */
+#home .tracks .track {
+  padding: 7.5px;
+}
+/* line 59, ../sass/layout/_home.scss */
+#home .tracks .track:nth-of-type(2n+1) {
+  background-color: #333333;
+  color: #eeeeee;
+}
+@media only screen and (min-width: 30em) {
+  /* line 74, ../sass/layout/_home.scss */
+  #home .featuredInfo .date-location .date {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 78, ../sass/layout/_home.scss */
+  #home .featuredInfo .date-location .location {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 87, ../sass/layout/_home.scss */
+  #home .featuredSpeakers .speaker {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 40em) {
+  /* line 103, ../sass/layout/_home.scss */
+  #home .tracks .track {
+    overflow: hidden;
+    *zoom: 1;
+    clear: both;
+  }
+  /* line 107, ../sass/layout/_home.scss */
+  #home .tracks .track h3 {
+    width: 33.33333%;
+    padding: 0 15px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.3em;
+  }
+  /* line 113, ../sass/layout/_home.scss */
+  #home .tracks .track p {
+    width: 66.66667%;
+    padding: 0 15px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 50em) {
+  /* line 129, ../sass/layout/_home.scss */
+  #home .featuredInfo .introduction {
+    width: 66.66667%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 133, ../sass/layout/_home.scss */
+  #home .featuredInfo .date-location {
+    width: 33.33333%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 135, ../sass/layout/_home.scss */
+  #home .featuredInfo .date-location .date {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+  /* line 139, ../sass/layout/_home.scss */
+  #home .featuredInfo .date-location .location {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  /* line 160, ../sass/layout/_home.scss */
+  #home .featuredSpeakers .speaker {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 170, ../sass/layout/_home.scss */
+  #home .tracks {
+    clear: both;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 173, ../sass/layout/_home.scss */
+  #home .tracks .track {
+    clear: none;
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+  /* line 178, ../sass/layout/_home.scss */
+  #home .tracks .track h3 {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+  /* line 182, ../sass/layout/_home.scss */
+  #home .tracks .track p {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+}
+
 /* line 11, ../sass/layout/_schedule.scss */
 #schedule .schedule.content section {
   padding: .5em;
