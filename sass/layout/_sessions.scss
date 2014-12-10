@@ -1,0 +1,149 @@
+ /*---------------------- session page --------------------------*/
+
+
+#session{
+
+
+	// 	==========================================
+	//	MIDTERM CSS
+	//	==========================================
+
+		//paste midterm here
+                                        .workshop_creative_writing,.workshop_fine_arts,.workshop_performing_arts,.workshop_media_arts{
+          width: 100%;
+          float: left;
+          margin-bottom: 4%;
+          }
+         .workshop_creative_writing h3,.workshop_fine_arts h3,.workshop_performing_arts h3,.workshop_media_arts h3{
+          width: 100%;
+          float: left;
+          text-align: center;
+          color: orangered;
+          margin-top: 2%;
+          background: orangered;
+          color: #fff;
+         }
+
+          .workshop_creative_writing h4,.workshop_fine_arts h4,.workshop_performing_arts h4,.workshop_media_arts h4{
+          width: 100%;
+          float: left;
+        margin: 2% 0;
+         }
+
+        .track1 {
+          width: 100%;
+          float: left;
+          background-color: #d4b278;
+          padding-bottom: 2%;
+          padding-left: 3%;
+          padding-right: 3%;
+        }
+
+        .track2{
+           width: 100%;
+          float: left;
+          background-color: #d5ae69;
+         padding-bottom: 2%;
+          padding-left: 3%;
+          padding-right: 3%;
+        }
+
+
+        .track3{
+           width: 100%;
+          float: left;
+          background-color:#d4a85c;
+          padding-bottom: 2%;
+           padding-left: 3%;
+          padding-right: 3%;
+        }
+
+        .track4{
+           width: 100%;
+          float: left;
+          background-color: #d19d42;
+          padding-bottom: 2%;
+           padding-left: 3%;
+          padding-right: 3%;
+        }
+
+        .presenter{
+          text-decoration: underline;
+          font-size: 85%;
+          font-style: italic;
+          font-weight: bold;
+        }
+
+
+	// 	==========================================
+	//	SMALL LAYOUT
+	//	==========================================
+	@include respond-to(small){
+
+		
+
+	}
+	//end small
+
+
+
+	// 	==========================================
+	//	MEDIUM LAYOUT
+	//	==========================================
+	@include respond-to(medium){
+
+		.track1, .track2, .track3, .track4{
+            @include cols(1,2);
+            background-color: transparent;
+            
+            h4{
+               color:skyblue; 
+            }
+        }
+        .track3{
+            clear:both;
+        }
+        
+        .track1, .track4{
+//            background-color: #fff;
+        }
+
+	}
+	//end small
+
+
+
+
+	// 	==========================================
+	//	LARGE LAYOUT
+	//	==========================================
+	@include respond-to(large){
+
+		.workshop_creative_writing, .workshop_fine_arts, .workshop_performing_arts, .workshop_media_arts{
+            @include cols(1,2);
+        }
+        
+        .track1, .track2, .track3, .track4{
+            @include no-cols;
+        }
+
+	}
+	//end Large
+    
+    
+    // 	==========================================
+	//	x-LARGE LAYOUT
+	//	==========================================
+	@include respond-to(x-large){
+        
+        .track1, .track2, .track3, .track4{
+            @include cols(1,2);
+        }
+
+	}
+	//end Large
+
+
+
+}
+//end session
