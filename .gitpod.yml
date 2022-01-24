@@ -1,0 +1,11 @@
+
+vscode:
+  extensions:
+    - eamodio.gitlens
+    - ecmel.vscode-html-css
+    - github.vscode-pull-request-github
+    - formulahendry.auto-complete-tag
+    - pranaygp.vscode-css-peek
+    - usernamehw.errorlens
+    - vincaslt.highlight-matching-tag
+    - esbenp.prettier-vscode
